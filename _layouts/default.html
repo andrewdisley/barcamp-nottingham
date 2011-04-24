@@ -1,0 +1,58 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js no-datauri ie6" lang="en"><![endif]-->
+<!--[if IE 7]><html class="no-js no-datauri ie7" lang="en"><![endif]-->
+<!--[if IE 8]><html class="no-js ie8" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js" lang="en"><!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <title>{% if page.title %}{{ page.title }}{% else %}{% endif %}</title>{% if page.meta_description %}
+    <meta name="description" content="{{ page.meta_description }}">{% endif %}{% if page.meta_keywords %}
+    <meta name="keywords" content="{{ page.meta_keywords }}">{% endif %}{% if site.author %}
+    <meta name="author" content="{{ site.author }} {@link {{ site.author_twitter }} | {{ site.author_url }}}">{% endif %}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <!--[if gt IE 6]><!-->
+    <script src="http://use.typekit.com/ian5yhe.js"></script>
+    <script>try{Typekit.load();}catch(e){}</script>
+    <link href="{{ site.assets_url }}css/screen.css{{ site.assets_cache_buster}}" rel="stylesheet">
+    <script src="{{ site.assets_url }}js/libs/modernizr-1.7.min.js"></script>
+    <!--<![endif]-->
+  </head>
+  <body{% if page.section %} class="{{ page.section }}"{% endif %} id="{{ site.id }}">
+    <div id="Container">
+      <header id="Header" role="banner">
+        <div class="container">
+          <h1><a href="{{ site.url }}"><img alt="{{ site.title }}" height="140" src="{{ site.assets_url }}img/{{ site.name }}.png" width="450"></a></h1>
+          <h2><span class="date">4<sup>th</sup> and 5<sup>th</sup> June 2011</span> <span class="venue">Venue TBC</span> ( <a href="http://nottinghack.org.uk/?p=626">Can you help</a>? )</h2>
+          <p class="tickets"><a href="http://bcnott.eventbrite.com/">Get Tickets</a></p>
+        </div>
+        <nav id="NavPri" role="navigation">
+          <ul class="container">
+            <li{% if page.section contains 'home' %} class="active"{% endif %} id="NP1"><a href="{{ site.url }}">About</a></li>
+            <li{% if page.section contains 'sponsor' %} class="active"{% endif %} id="NP2"><a href="{{ site.url }}sponsor">Sponsor Us</a></li>
+            <li{% if page.section contains 'directions' %} class="active"{% endif %} id="NP3"><a href="{{ site.url }}directions">Directions</a></li>
+            <li{% if page.section contains 'sponsors' %} class="active"{% endif %} id="NP4"><a href="{{ site.url }}sponsors">Sponsors</a></li>
+            <li{% if page.section contains 'contact' %} class="active"{% endif %} id="NP5"><a href="{{ site.url }}contact">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="container" id="Content" role="main">
+{{ content }}
+        <span class="s-i-i s-i-i-trees"></span>
+      </div>
+    </div>
+    <footer id="Footer" role="contentinfo">
+      <div class="container">
+        <p><strong>Twitter</strong> <a href="https://twitter.com/bcnott">@bcnott</a> | <a href="http://search.twitter.com/search?q=bcnott">#bcnott</a> &nbsp;&nbsp; <strong>Google Group</strong> <a href="http://groups.google.co.uk/group/bcnott">http://groups.google.co.uk/group/bcnott</a></p>
+        <p class="credits">Logo by <a href="http://www.stevelacey.net/">Steve Lacey</a> | <a href="http://twitter.com/stevelacey">@stevelacey</a> Website designed by <a href="http://kerrysholicar.com/">Kerry Sholicar</a> | <a href="http://twitter.com/kerrysholicar">@kerrysholicar</a> built by <a href="http://simplified.co.uk/">Andrew Disley</a> | <a href="http://twitter.com/andrewdisley">@andrewdisley</a></p>
+      </div>
+    </footer>{% if site.env == 'production' %}
+    <script>
+      var _gaq=[["_setAccount","{{ site.google_analytics_id }}"],["_trackPageview"]];
+      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
+      g.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";
+      s.parentNode.insertBefore(g,s)}(document,"script"));
+    </script>{% endif %}
+  </body>
+</html>
