@@ -156,7 +156,6 @@ article.sponsor img { border: 2px solid #EAF0CC; float: left; margin-bottom: 24p
   h2 { font-size: 20px; }
   h3 { font-size: 18px; }
   .container { width: 320px; }
-  #Container { }
   #Header { background-image: none; height: auto; }
   #Header h1 { margin-bottom: 20px; padding-top: 20px; text-align: center; }
   #Header h1 img { height: 100px; width: 320px; }
@@ -171,7 +170,7 @@ article.sponsor img { border: 2px solid #EAF0CC; float: left; margin-bottom: 24p
   #NavPri li.active { display: none; }
   #NavPri #NP5 a { background-image: url(../img/navpri.png); }
   #Content { padding-top: 20px; }
-  article { padding: 0 10px 1px 10px; }
+  article { padding-left: 10px; padding-right: 10px; }
   article header h2, section header h2 { margin-bottom: 15px; }
   article header p, section header p { font-size: 18px; }
   article .content { font-size: 16px; line-height: 20px; }
@@ -181,6 +180,7 @@ article.sponsor img { border: 2px solid #EAF0CC; float: left; margin-bottom: 24p
   #Sponsors li.null { margin-left: 10px; }
   #Sponsors img { height: 56px; width: 132px; }
   #Footer { font-size: 14px; }
+  #Footer .container { padding-left: 10px; padding-right: 10px; }
 }
 /* **/
 
