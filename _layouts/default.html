@@ -48,11 +48,16 @@
         <p class="credits">Logo by <a href="http://www.stevelacey.net/">Steve Lacey</a> | <a href="http://twitter.com/stevelacey">@stevelacey</a> Website designed by <a href="http://kerrysholicar.com/">Kerry Sholicar</a> | <a href="http://twitter.com/kerrysholicar">@kerrysholicar</a> built by <a href="http://simplified.co.uk/">Andrew Disley</a> | <a href="http://twitter.com/andrewdisley">@andrewdisley</a></p>
       </div>
     </footer>{% if site.env == 'production' %}
+    <script src="http://include.reinvigorate.net/re_.js"></script>
     <script>
-      var _gaq=[["_setAccount","{{ site.google_analytics_id }}"],["_trackPageview"]];
-      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
-      g.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";
-      s.parentNode.insertBefore(g,s)}(document,"script"));
+      try {
+        reinvigorate.url_filter = function (url) { return url; }
+        reinvigorate.track("85aw7-21u68np930");
+      } catch(err) {}
+      // var _gaq=[["_setAccount","{{ site.google_analytics_id }}"],["_trackPageview"]];
+      // (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
+      // g.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";
+      // s.parentNode.insertBefore(g,s)}(document,"script"));
     </script>{% endif %}
   </body>
 </html>
