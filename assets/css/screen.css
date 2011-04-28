@@ -171,9 +171,11 @@ article.sponsor img { border: 2px solid #EAF0CC; float: left; margin-bottom: 24p
   #NavPri #NP5 a { background-image: url(../img/navpri.png); }
   #Content { padding-top: 20px; }
   article { padding-left: 10px; padding-right: 10px; }
+  #Content section { padding-left: 10px; padding-right: 10px; }
   article header h2, section header h2 { margin-bottom: 15px; }
   article header p, section header p { font-size: 18px; }
   article .content { font-size: 16px; line-height: 20px; }
+  article.sponsor img { margin-bottom: 14px; margin-right: 14px; }
   #Sponsors h2 { padding-left: 10px; }
   #Sponsors ul { padding-bottom: 20px; width: auto; }
   #Sponsors li { margin: 0 10px 20px 10px; }
