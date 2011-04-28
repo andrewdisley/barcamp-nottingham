@@ -164,7 +164,7 @@ article.sponsor img { border: 2px solid #EAF0CC; float: left; margin-bottom: 24p
   #Header h2 .date { display: block; font-size: 24px; }
   #Header h2 .venue { font-size: 20px; }
   #Header p.tickets { margin-bottom: 35px; margin-left: 35px; position: static; }
-  #NavPri { background: #FFFFFF url(../img/header.png) repeat-x 0 0; border-bottom: 0; border-top: 0; font-size: 18px; height: auto; padding-top: 40px; position: static; }
+  #NavPri { background: #FFFFFF url(../img/header.png) repeat-x 0 0; border-bottom: 0; border-top: 0; font-size: 17px; height: auto; padding-top: 40px; position: static; }
   #NavPri ul { margin: 0 auto; width: 320px; }
   #NavPri li { margin-bottom: 1px; margin-right: 0; width: 150px; }
   #NavPri a { background-color: transparent; background-position: 10px 50%; padding: 5px 0 5px 30px; }
