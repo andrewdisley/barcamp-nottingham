@@ -166,14 +166,16 @@ article.sponsor img { border: 2px solid #EAF0CC; float: left; margin-bottom: 24p
   #Header p.tickets { margin-bottom: 35px; margin-left: 35px; position: static; }
   #NavPri { background: #FFFFFF url(../img/header.png) repeat-x 0 0; border-bottom: 0; border-top: 0; font-size: 18px; height: auto; padding-top: 40px; position: static; }
   #NavPri ul { margin: 0 auto; width: 320px; }
-  #NavPri li { margin-bottom: 1px; margin-right: 5px; width: 150px; }
-  #NavPri a { background-color: transparent; background-position: 0 50%; padding: 5px 0 5px 25px; }
+  #NavPri li { margin-bottom: 1px; margin-right: 0; width: 150px; }
+  #NavPri a { background-color: transparent; background-position: 10px 50%; padding: 5px 0 5px 30px; }
   #NavPri li.active { display: none; }
   #NavPri #NP5 a { background-image: url(../img/navpri.png); }
   #Content { padding-top: 20px; }
+  article { padding: 0 10px 1px 10px; }
   article header h2, section header h2 { margin-bottom: 15px; }
   article header p, section header p { font-size: 18px; }
   article .content { font-size: 16px; line-height: 20px; }
+  #Sponsors h2 { padding-left: 10px; }
   #Sponsors ul { padding-bottom: 20px; width: auto; }
   #Sponsors li { margin: 0 10px 20px 10px; }
   #Sponsors li.null { margin-left: 10px; }
