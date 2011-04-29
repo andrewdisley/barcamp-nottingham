@@ -23,7 +23,7 @@ google_analytics_id: UA-XXXXX-XX
 
 # Set the environment used to include production specific assets and enable Google Analytics
 # development, staging, production
-env: development
+env: production
 
 # Excluded files, jekyll excludes files that begin with an underscore
 exclude: ['README', 'Rakefile']

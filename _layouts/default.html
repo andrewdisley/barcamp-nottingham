@@ -24,13 +24,13 @@
       <header id="Header" role="banner">
         <div class="container">
           <h1><a href="{{ site.url }}"><img alt="{{ site.title }}" height="140" src="{{ site.assets_url }}img/{{ site.name }}.png" width="450"></a></h1>
-          <h2><span class="date">23<sup>rd</sup> and 24<sup>th</sup> July 2011</span> <span class="venue">Venue <a href="http://nottinghack.org.uk/">Nottingham Hackspace</a></span></h2>
+          <h2><span class="date">23<sup>rd</sup> and 24<sup>th</sup> July 2011</span> <span class="venue">at <a href="http://nottinghack.org.uk/">Nottingham Hackspace</a></span></h2>
           <p class="tickets"><a href="http://bcnott.eventbrite.com/">Get Tickets</a></p>
         </div>
         <nav id="NavPri" role="navigation">
           <ul class="container">
             <li{% if page.section contains 'home' %} class="active"{% endif %} id="NP1"><a href="{{ site.url }}">About</a></li>
-            <li{% if page.section contains 'sponsor' %} class="active"{% endif %} id="NP2"><a href="{{ site.url }}sponsor">Sponsor Us</a></li>
+            <li{% if page.section contains 'sponsorus' %} class="active"{% endif %} id="NP2"><a href="{{ site.url }}sponsor">Sponsor Us</a></li>
             <li{% if page.section contains 'directions' %} class="active"{% endif %} id="NP3"><a href="{{ site.url }}directions">Directions</a></li>
             <li{% if page.section contains 'sponsors' %} class="active"{% endif %} id="NP4"><a href="{{ site.url }}sponsors">Sponsors</a></li>
             <li{% if page.section contains 'contact' %} class="active"{% endif %} id="NP5"><a href="{{ site.url }}contact">Contact</a></li>
@@ -48,11 +48,16 @@
         <p class="credits">Logo by <a href="http://www.stevelacey.net/">Steve Lacey</a> | <a href="http://twitter.com/stevelacey">@stevelacey</a> Website designed by <a href="http://kerrysholicar.com/">Kerry Sholicar</a> | <a href="http://twitter.com/kerrysholicar">@kerrysholicar</a> built by <a href="http://simplified.co.uk/">Andrew Disley</a> | <a href="http://twitter.com/andrewdisley">@andrewdisley</a></p>
       </div>
     </footer>{% if site.env == 'production' %}
+    <script src="http://include.reinvigorate.net/re_.js"></script>
     <script>
-      var _gaq=[["_setAccount","{{ site.google_analytics_id }}"],["_trackPageview"]];
-      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
-      g.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";
-      s.parentNode.insertBefore(g,s)}(document,"script"));
+      try {
+        reinvigorate.url_filter = function (url) { return url; }
+        reinvigorate.track("85aw7-21u68np930");
+      } catch(err) {}
+      // var _gaq=[["_setAccount","{{ site.google_analytics_id }}"],["_trackPageview"]];
+      // (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
+      // g.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";
+      // s.parentNode.insertBefore(g,s)}(document,"script"));
     </script>{% endif %}
   </body>
 </html>
