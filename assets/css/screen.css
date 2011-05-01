@@ -97,11 +97,12 @@ p { margin-bottom: 25px; }
 #Header .container { position: relative; }
 #Header h1 { clear: both; margin-bottom: 100px; padding-top: 110px; }
 #Header h1 img { margin-left: -10px; }
-#Header h2 { border-bottom: 1px solid #EEEAD6; color: #948D6A; font-size: 18px; padding: 0 24px 10px; }
+#Header h2 { border-bottom: 1px solid #EEEAD6; color: #948D6A; font-size: 18px; padding: 0 24px 20px; }
 #Header h2 a { color: #948D6A; }
 #Header h2 a:hover { color: #3A5431; }
 #Header h2 .date { color: #797357; font-size: 36px; font-weight: 600; }
-#Header h2 .venue { color: #797357; font-size: 24px; }
+#Header h2 .venue { color: #797357; font-size: 24px; position: relative; }
+#Header h2 .venue img { right: -55px; position: absolute; }
 #Header p.tickets { background: #FFFFFF url(../img/tickets.png) no-repeat 0 0; font-size: 36px; height: 80px; left: 552px; position: absolute; top: 153px; width: 252px; }
 #Header p.tickets a { color: #ECBA6C; display: block; height: 100%; line-height: 80px; width: 100%; text-align: center; text-decoration: none; }
 #Header p.tickets a:hover { color: #F7AD3A; }
