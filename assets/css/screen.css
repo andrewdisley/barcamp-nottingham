@@ -34,7 +34,7 @@ input, select { vertical-align: middle; }
 body { font:13px/1.231 sans-serif; *font-size:small; }
 select, input, textarea, button { font:99% sans-serif; }
 pre, code, kbd, samp { font-family: monospace, sans-serif; }
-html { overflow-y: scroll; }
+html { overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
 a:hover, a:active { outline: none; }
 ul, ol { margin-left: 2em; }
 ol { list-style-type: decimal; }
@@ -76,7 +76,7 @@ button {  width: auto; overflow: visible; }
 
 /** Base and Typography
 ------------------------------------------------------------*/
-body { background-color: #E6F6F2; color: #667672; font-family: "myriad-PRO-1", "myriad-pro-2", "Myriad Pro", Helvetica, Arial, sans-serif; width: 100%; }
+body { background-color: #E6F6F2; color: #667672; font-family: "myriad-pro-1", "myriad-pro-2", "Myriad Pro", Helvetica, Arial, sans-serif; width: 100%; }
 button, input, textarea, select { color: #333333; font-family: "myriad-pro-1", "myriad-pro-2", "Myriad Pro", Helvetica, Arial, sans-serif; }
 a:hover, a:active { outline: none; }
 a, a:active, a:visited { color: #5B5B5B; }
@@ -139,18 +139,6 @@ article.sponsor img { border: 2px solid #EAF0CC; float: left; margin-bottom: 24p
 #Sponsors img { border: 1px solid #F2F5DF; display: block; }
 /* **/
 
-/** HTML5 ✰ Boilerplate Helpers
------------------------------------------------ */
-.hidden { display: none; visibility: hidden; }
-.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
-.invisible { visibility: hidden; }
-.clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; overflow: hidden; }
-.clearfix:after { clear: both; }
-.clearfix { zoom: 1; }
-/* **/
-
 /** 320px Small screen devices
 ----------------------------------------------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px), screen and (max-width: 550px) {
@@ -184,7 +172,7 @@ article.sponsor img { border: 2px solid #EAF0CC; float: left; margin-bottom: 24p
   #Sponsors li.null { margin-left: 10px; }
   #Sponsors img { height: 56px; width: 132px; }
   #Footer { font-size: 14px; }
-  #Footer .container { padding-left: 10px; padding-right: 10px; }
+  #Footer .container p { padding-left: 10px; padding-right: 30px; }
 }
 /* **/
 
